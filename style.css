@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  color: #628395;
+  color: #b3b4b5;
   font-size: 0.7rem;
   letter-spacing: 0.05rem;
 }
@@ -34,25 +34,6 @@ p {
   font-size: 1.5rem;
 
   margin-top: 0.6rem;
-}
-
-input {
-  padding: 1rem;
-  border: none;
-  flex-grow: 2;
-  border-radius: 1rem 0 0 1rem;
-}
-
-input,
-input::-webkit-input-placeholder {
-  font-size: 1.1rem;
-}
-
-button {
-  border: none;
-  flex-grow: 1;
-  background: black;
-  border-radius: 0 1rem 1rem 0;
 }
 
 .data-spacing {
@@ -73,7 +54,7 @@ button {
 
 #search-main {
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   margin: 2rem 0 1.8rem 0;
 }
 
@@ -91,9 +72,32 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 800px) {
+input {
+  padding: 1rem;
+  border: none;
+  flex: 0 1 25rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 1.1rem;
+}
+
+button {
+  border: none;
+  flex: 0 0.2 3rem;
+  background: black;
+  border-radius: 0 1rem 1rem 0;
+}
+
+@media (min-width: 700px) {
+  p {
+    text-align: left;
+  }
+
   h2 {
-    /* text-align: left; */
+    text-align: left;
   }
   #top-half-main {
     height: 16rem;
@@ -112,6 +116,20 @@ button {
   }
 
   #address-data > * + * {
-    margin-left: 2em;
+    padding-left: 1.7em;
+    border-left: solid 0.7px #d3d3d3;
+  }
+
+  #search-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    flex: 0 0 30rem;
+  }
+
+  button {
+    flex: 0 0 3rem;
   }
 }
